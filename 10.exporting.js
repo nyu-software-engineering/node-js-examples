@@ -1,4 +1,5 @@
 /*
+ * This file shows exporting as specified by CommonJS, the version traditionally used in Node.js, but not the way indiciated in the ECMASCRIPT specification.
  * Exporting allows constructs in one file to be made available in another.
  * Any kind of value can be exported: numbers, strings, arrays, functions, objects, etc
  * 
