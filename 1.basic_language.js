@@ -16,6 +16,11 @@ const pi = 3.14; // a Number
 const youWillLoveJavascript = true; // a boolean
 const myFavoriteLanguage = "Javascript"; // etc, etc...
 
+// constants are declared with the const keyword
+const data = [10, 20, 30];  // a variable that can't be reassigned!
+message[1] = 'ha!'; // but this is not variable reassignment!
+console.log(`data = ${data}!`); // expected output: [10, 'ha!', 30]
+
 // non-constant variables are declared with the keyword let
 let it = true; // it's true!
 it = (it) ? false : true; // reassign it to be its opposite using the ternary operator
@@ -27,7 +32,7 @@ for (let i=1; i<6; i++) {
 }
 
 // while loop
-let i = 0;
+let i = 1;
 while (i < 6) {
     console.log(`While loop iteration #${i}`);
     i++;
