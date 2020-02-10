@@ -9,7 +9,7 @@
 const [a, b] = [10, 20, 30, 40, 50];
 console.log('\n-- Simple destructuring --')
 console.log(`a = ${a}`); // expected output: 10
-console.log(`a = ${a}`); // expected output: 20
+console.log(`b = ${b}`); // expected output: 20
 
 // do the same, but also lump all remaining values into an array... this is 'unpacking'
 const [c, d, ...rest] = [10, 20, 30, 40, 50];
@@ -17,8 +17,10 @@ console.log('\n-- Destructuring and unpacking --')
 console.log(`rest = ${rest}`); // expected output: Array [30,40,50]
 
 // pack multiple arguments into a single array
-function foo(...args) {
+function foo(a, b, ...args) {
     console.log('\n-- Packing function arguments using rest argument --')
+    console.log(`a = ${a}`); // expected output: 10
+    console.log(`b = ${b}`); // expected output: 20
     console.log(`args = ${args}`); // expected output: Array [10,20,30,40,50]
 }
 foo(10, 20, 30, 40, 50); // separate arguments

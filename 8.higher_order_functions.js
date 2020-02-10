@@ -11,7 +11,7 @@ foo(5); // call it
 
 // another function that takes a function as a parameter
 const bar = (func) => {
-    func(5); // call the foo function, whatever it is
+    func(5); // call the function that was received, whatever it is, and pass it a 5
 }
 console.log('\n-- Passing function as argument --')
 bar(foo);

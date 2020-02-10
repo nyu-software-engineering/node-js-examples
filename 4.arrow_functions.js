@@ -23,6 +23,10 @@ const doSomething3 = (x, y) => {
 }
 console.log( doSomething3('hello', 'world') ); // call the function and use its return value
 
-// same as the previous function, but even further reduced syntax with implied return statement
+// even further reduced syntax for a function with only a return statement... so no curly braces required
 const doSomething4 = (x, y) => `doSomething4 is running with x=${x} and y=${y}.`;
 console.log( doSomething4('hello', 'world') ); // call the function and use its return value
+
+// even further reduced syntax with no parentheses around a single parameter
+const doSomething5 = x => `doSomething5 is running with x=${x}.`;
+console.log( doSomething5('hello') ); // call the function and use its return value
