@@ -135,7 +135,7 @@ For example, a bare-bones package.json file might just contain a bit of metadata
 - the 'name' field should not contain the words 'node' or 'js'
 - the version number should use semantic versioning
 
-```javascript
+```js
 {
     "name": "blerg",
     "description": "Twas brillig and the slithy toves...",
@@ -154,7 +154,7 @@ A relatively full-featured package.json might look like the following. A few not
 - the 'dev-dependencies' field contains other packages that this package uses only for development, and not in production
 - the 'scripts' field allows developers to execute bash scripts at various lifecycle points, such as when the package is being started, stopped, tested, etc. Run the command, "npm help npm-scripts" to see a full description of using scripts for specific npm lifecycle events
 
-```javascript
+```js
 {
 	"name": "blerg",
 	"description": "Twas brillig and the slithy toves...",
